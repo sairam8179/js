@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sairam if else Document</title>
+</head>
+<body>
+ <script>
+    // task 1 even or odd 
+    var a=+prompt("Enter the number for even or odd");
+    if(a%2==0){
+        alert(+a+" "+"is an Even number")
+        
+    }
+    else{
+        alert(+a+""+"is an Odd number")
+    }
+
+    // task 2 leap year
+    var a=+prompt("Enter the year")
+    if(a%4==0){
+        alert(+a+ "" +" is an leap year")
+    }
+    else{
+        alert(+a+ "" + " is not leap year")
+    }
+    // task 3 largest number
+    var e=+prompt("Enter 1st number");
+        var f=+prompt("Enter 2nd number");
+        var g=+prompt("Enter 3rd number");
+        
+        if(e<0||f<0||g<0){
+            alert("Negative inputs");
+
+        }
+        else if(e==f&&f==g){
+            alert("All inputs are equal")
+        }
+       else if(e>f&&e>g){
+            alert(+e +"is bigger");
+        }
+        else if(f>e&&f>g){
+            alert(+f +" "+"is bigger");
+        }
+        else{
+            alert(+g+ " "+"is bigger");
+        }
+
+    // task 4 time of the 
+    var a=+prompt("Enter the time")
+    if(a>=1&& a<11){
+        alert("Good Morning")
+    }
+    else if (a>=12&&a<17){
+        alert("Good afternoon")
+    }
+    else if (a>18&&a<20){
+        alert("Good evening")
+    }
+    else{
+        alert("Good night")
+    }
+
+    // task 5 currency
+    var a=+prompt("Enter the currency");
+    var b=prompt("enter your currency in any one of the following: usd, Euro");
+    var c=prompt("enter your currency in any one of the following :usd , Euro ");
+    if(b=="usd"&&c=="Euro") {
+        alert(a+ b+ " is equal to"+ a*1.04 +c);
+    }
+    else {
+    alert(a+ b+ " is equal to" +a +c);
+    }
+
+
+
+
+    // // task 6 traffic
+    var traffic=prompt("Follow the traffic Rules")
+    switch(traffic){
+        case "red":alert("stop")
+        break
+        case "yellow":alert("slow down")
+        break
+        case "green":alert("go")
+        break
+    }
+
+
+
+
+    // // task 7 seasons
+    var month =prompt("Enter month")
+    switch(month){
+        case"january":alert("it is a winter season")
+        break
+        case "febuary":alert("it is a winter season")
+        break
+        case "march":alert("it is a summer season")
+        break
+        case "apirl":alert("it is a summer season")
+        break
+        case "may":alert("it is a summer season")
+        break
+        case "june":alert("it is a monsoon season")
+        break
+        case "july":alert("it is a monsoon season")
+        break
+        case "August":alert("it is a monsoon season")
+        break
+        case "September":alert("it is a monsoon season")
+        break
+        case "October":alert("it is a autumn season")
+        break
+        case "November":alert("it is a autumn season")
+        break
+        case "December":alert("it is a winter season")
+        break
+
+    }
+    // // task 8 menu
+    var select=prompt("Enter your favourite icecream ")
+    switch(select){
+        case "Butterscotch":alert("99rs")
+        break
+        case "vanila":alert("89rs")
+        break
+        case "chocolate":alert("79rs")
+        break
+        case "chacobar":alert("59rs")
+        break
+        case "kulfi":alert("29rs")
+
+    }
+
+
+ </script>
+</body>
+</html>
