@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionsDocument</title>
+</head>
+<body>
+    <script>
+        
+
+
+    document.write("Odd numbers using control statement -continue <br>")
+     for(i=1;i<=30;i++){
+      if(i%2==0)
+      continue;
+    {
+        document.write(i+"<br>")
+      }
+  
+     }
+     document.write("Even numbers using control statement -break <br>")
+     for(i=0;i<=30;i++){
+      if(i%2==1)
+      continue;
+    {
+      document .write(i+"<br>")
+    }
+     }
+
+     document.write("Even numbers using Functions <br>")
+     function en(){
+      for(i=1;i<=30;i++){
+        if(i%2==0){
+          document.write(i+"<br>")
+        }
+      }
+     }
+     en()
+
+     document.write("Odd numbers using Functions <br>")
+     function odd(){
+      for(i=0;i<=50;i++){
+        if(i%2==1){
+        document.write(i+"<br>")
+        }
+      }
+     }
+     odd()
+
+     document.write("Sum of 1 to 10 using Functions <br>")
+      function add (a,b,c,d,e,f,g,h,i,j){
+        add=a+b+c+d+e+f+g+h+i+j;
+        return add;
+      }
+     document.write( add(1,2,3,4,5,6,7,8,9,10));"<br>"
+
+     document.write("Multiplications of 5 <br>")
+      function mul(){
+    for(var a=1;a<=10;a++){
+    document.write("5*" +a+ "="+(5*a) +"<br>")
+
+      }
+    }
+    mul()
+    
+  //   // task 1 even or odd 
+  //   function even(){
+  //   var a=+prompt("Enter the number for even or odd");
+  //   if(a%2==0){
+  //       alert(+a+" "+"is an Even number")
+        
+  //   }
+  //   else{
+  //       alert(+a+""+"is an Odd number")
+  //   }
+  // }
+  // even()
+
+  //   // task 2 leap year
+  //   function leap(){
+  //   var a=+prompt("Enter the year")
+  //   if(a%4==0){
+  //       alert(+a+ "" +" is an leap year")
+  //   }
+  //   else{
+  //       alert(+a+ "" + " is not leap year")
+  //   }
+  //    } 
+  //    leap()
+  //   // task 3 largest number
+  //   function large(){
+  //   var e=+prompt("Enter 1st number");
+  //       var f=+prompt("Enter 2nd number");
+  //       var g=+prompt("Enter 3rd number");
+        
+  //       if(e<0||f<0||g<0){
+  //           alert("Negative inputs");
+
+  //       }
+  //       else if(e==f&&f==g){
+  //           alert("All inputs are equal")
+  //       }
+  //      else if(e>f&&e>g){
+  //           alert(+e +"is bigger");
+  //       }
+  //       else if(f>e&&f>g){
+  //           alert(+f +" "+"is bigger");
+  //       }
+  //       else{
+  //           alert(+g+ " "+"is bigger");
+  //       }
+  //     }
+  //     large()
+
+  //   // task 4 time of the 
+  //   function time(){
+  //   var a=+prompt("Enter the time")
+  //   if(a>=1&& a<11){
+  //       alert("Good Morning")
+  //   }
+  //   else if (a>=12&&a<17){
+  //       alert("Good afternoon")
+  //   }
+  //   else if (a>18&&a<20){
+  //       alert("Good evening")
+  //   }
+  //   else{
+  //       alert("Good night")
+  //   }
+  // }
+  // time()
+  //   // task 5 currency
+  //   function currency(){
+  //   var a=+prompt("Enter the currency");
+  //   var b=prompt("enter your currency in any one of the following: usd, Euro");
+  //   var c=prompt("enter your currency in any one of the following :usd , Euro ");
+  //   if(b=="usd"&&c=="Euro") {
+  //       alert(a+ b+ " is equal to"+ a*1.04 +c);
+  //   }
+  //   else {
+  //   alert(a+ b+ " is equal to" +a +c);
+  //   }
+  // }
+  // currency()
+
+
+
+  //   // // task 6 traffic
+  //   function traffic(){
+  //   var traffic=prompt("Follow the traffic Rules")
+  //   switch(traffic){
+  //       case "red":alert("stop")
+  //       break
+  //       case "yellow":alert("slow down")
+  //       break
+  //       case "green":alert("go")
+  //       break
+  //   }
+  // }
+  // traffic()
+
+
+
+  //   // // task 7 seasons
+  //   function season(){
+  //   var month =prompt("Enter month")
+  //   switch(month){
+  //       case"january":alert("it is a winter season")
+  //       break
+  //       case "febuary":alert("it is a winter season")
+  //       break
+  //       case "march":alert("it is a summer season")
+  //       break
+  //       case "apirl":alert("it is a summer season")
+  //       break
+  //       case "may":alert("it is a summer season")
+  //       break
+  //       case "june":alert("it is a monsoon season")
+  //       break
+  //       case "july":alert("it is a monsoon season")
+  //       break
+  //       case "August":alert("it is a monsoon season")
+  //       break
+  //       case "September":alert("it is a monsoon season")
+  //       break
+  //       case "October":alert("it is a autumn season")
+  //       break
+  //       case "November":alert("it is a autumn season")
+  //       break
+  //       case "December":alert("it is a winter season")
+  //       break
+
+  //   }
+  // }
+  // season()
+  //   // // task 8 menu
+  //   var select=prompt("Enter your favourite icecream ")
+  //   switch(select){
+  //       case "Butterscotch":alert("99rs")
+  //       break
+  //       case "vanila":alert("89rs")
+  //       break
+  //       case "chocolate":alert("79rs")
+  //       break
+  //       case "chacobar":alert("59rs")
+  //       break
+  //       case "kulfi":alert("29rs")
+
+  //   }
+
+    </script>
+</body>
+</html>
