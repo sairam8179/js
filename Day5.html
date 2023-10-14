@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Pattern using loop")
+        var a="* "
+        for(i=0;i<=5;i++){
+            document.write(a.repeat(i),"<br>")
+        }
+
+
+        document.write("reverse Pattern using loop <br>")
+        var a="* "
+        for(i=5;i>=1;i--){
+            document.write(a.repeat(i),"<br>")
+        }
+
+        
+        document.write("Pattern using loop <br>")
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(j," ")
+            }
+            document.write("<br>")
+        }
+
+        
+        document.write(" Reverse Pattern using loop <br>")
+        for(i=5;i>=1;i--){
+            for(j=1;j<=i;j++){
+                document.write(j," ")
+            }
+            document.write("<br>")
+        }
+
+        document.write(" function Pattern using loop <br>")
+        
+        function loop (s){
+        for(i=1;i<=s;i++){
+            for(j=1;j<=i;j++){
+                document.write(j )
+            }
+            document.write("<br>")
+        }
+        }
+        loop(10)
+
+        document.write(" Normal Pattern using string <br>")
+        var a="madam";
+        var z=" "
+        for(i=0;i<=a.length-1;i++){
+           z=z+ a[i];
+        }
+        document.write(z, "<br>")
+
+        document.write(" Reverse Pattern using string <br>")
+       debugger
+        var a="madam";
+        var b=" ";
+        for(i=a.length-1;i>=0;i--){
+            b=b+ a[i];
+        }
+        document.write(b,"<br>")
+        if(z==b){
+            document.write(b+"--- it is an polindrome")
+        }
+        else{
+            document.write(b+" --it is not a polindrome")
+        }
+        
+        document.write("<br>")
+
+        document.write(" Normal Pattern using string <br>")
+        var a="rador";
+        var z=" "
+        for(i=0;i<=a.length-1;i++){
+           z=z+ a[i];
+        }
+        document.write(z, "<br>")
+
+        document.write(" Reverse Pattern using string <br>")
+       debugger
+        var a="rador";
+        var b=" ";
+        for(i=a.length-1;i>=0;i--){
+            b=b+ a[i];
+        }
+        document.write(b,"<br>")
+        if(z==b){
+            document.write(b+" --it is an polindrome")
+        }
+        else{
+            document.write(b+" -- it is not a polindrome")
+        }
+    </script>
+</body>
+</html>
