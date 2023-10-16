@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> String Methods Document</title>
+</head>
+<body>
+    <h4>1.Print only four members in -we are four members  </h4>
+    <script>
+        var d="we are four members"
+        document.write(d.substr(7))
+    </script>
+    <h4>2.Convert string into object.Ex-Sairam</h4>
+    <script>
+        var s="sairam"
+        var d= new String("sairam")
+        document.write(typeof d)
+    </script>
+    <h4>3.Find value of k- 10k coders</h4>
+    <script>
+        var s="10k coders"
+        var d=s.charCodeAt(2)
+        document.write(d)
+    </script>
+    <h4>4.Check whether the "King" is present in the string "Virat kohli is king of cricket"</h4>
+    <script>
+        var a="virat kohli is king of cricket"
+        var b=a.includes("king")
+        document.write(b)
+    </script>
+    <h4>5.Find the consonants in the word -"Anumula Revanth Reddy"</h4>
+    <script>
+        var g="anumula revanth reddy"
+        var h=0
+        for(i=0;i<=g.length-1;i++){
+            if(g[i]=='a'||g[i]=='e'||g[i]=='i'||g[i]=='o'||g[i]=='u')
+            h++;
+        }
+    document.write(g.length-h)
+    </script>
+    <h4>6.Find index of string-In Hyderabad -Hyderabad Biryani is Famous </h4>
+    <script>
+        var s="In Hyderabad -Hyderabad Biryani is Famous"
+        document.write(s.indexOf("Hyderabad"))
+    </script>
+    <h4>7.find the Matching a string -in contain have maintain its mainted by main manager </h4>
+    <script>
+        let text = "in contain have maintain its mainted by main manager ";
+        const myArr = text.matchAll("ain");
+        document.write( Array.from (myArr));
+        </script>
+        <h4>8.Level,Rador-polindrome or Not</h4>
+        <script>
+            var a= "level"
+            var b=" "
+            for(i=0;i<=a.length-1;i++){
+                b+=a[i]
+            }
+            // document.write(b)
+            var a="level"
+            var b=" "
+            for(i=a.length-1;i>=0;i--){
+                b+=a[i]
+            }
+            // document.write(b)
+            if(b=a){
+                document.write("Level"+" ... it is an polindrome")
+            }
+            else{
+                document.write("it is not an polindrome ")
+            }
+            document.write("<br>")
+            var a= "rador"
+            var b=" "
+            for(i=0;i<=a.length-1;i++){
+                b+=a[i]
+            }
+            // document.write(b)
+            var a="rador"
+            var b=" "
+            for(i=a.length-1;i>=0;i--){
+                b+=a[i]
+            }
+            // document.write(b)
+            if(b==a){
+                document.write("it is an polindrome")
+            }
+            else{
+                document.write("Rador"+" ---it is not an polindrome")
+            }
+        </script>
+    <h4>9.convert string into Array</h4>
+    <script>
+        var a="Santhosh"
+        document.write(a.split(""))
+    </script>
+    <h4>10.Find the Unicodes</h4>
+    <script>
+        var a= "sairam"
+        document.write(a.charCodeAt(0),"<br>")
+        var a= "sairam"
+        document.write(a.charCodeAt(1),"<br>")
+        var a= "sairam"
+        document.write(a.charCodeAt(2),"<br>")
+        var a= "sairam"
+        document.write(a.charCodeAt(3),"<br>")
+        var a= "sairam"
+        document.write(a.charCodeAt(4),"<br>")
+        var a= "sairam"
+        document.write(a.charCodeAt(5),"<br>")
+    </script>
+    <h4>11.How many Spaces are there in "Broard the way pub"</h4>
+    <script>
+        var a ="Broard the way pub"
+        var b=0
+        for(i=0;i<=a.length-1;i++){
+            if(a[i]==' ')
+            b++;
+        }
+        document.write(b)
+    </script>
+    <h4>12.Finding the Vowels Count in "ASSONANCE"</h4>
+    <script>
+        var a= "assonance"
+        var count=0 
+        for(i=0;i<=s.length-1;i++){
+            if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+            count++;
+        }
+        document.write(count)
+    </script>
+    <h4>13.2000,2001To convert numbers into String</h4>
+    <script>
+        var s=2000
+        var a=2001
+        document.write(a+s.toString())
+    </script>
+    <h4>14.Input=100000000000, o/p=Number of Zeros</h4>
+    <script>
+        var a= 100000000000
+        var b=a.toString()
+        var zeros=0
+        for(i=0;i<=b.length-1;i++){
+            if(b[i]==0)
+            zeros++
+        }
+        document.write( zeros)
+
+    </script>
+    <h4>15.Space Remove in "....Revanth Reddy ......"</h4>
+    <script>
+        var a="       Revanth Reddy      "
+        document.write(a.trimEnd())
+    </script>
+    <h4>16.String reverse -"Harish"</h4>
+    <script>
+        var a="Harish"
+        var b=' '
+        for(i=a.length-1;i>=0;i--){
+            b+=a[i]
+        }
+        document.write(b,"<br>")
+    </script>
+    <h4>17.concat without using "+"</h4>
+    <script>
+        var s="sae"
+        var a=" ram"
+        document.write(s.concat(a))
+    </script>
+    <h4>18.“Your attitude is critical to life"-chnage into “Your attitude is critical to success</h4>
+    <script>
+        var a= "Your attitude is critical to life "
+        document.write(a.replace("life","success"))
+    </script>
+    <h4>19.veeraboina sairam yadav -print string length</h4>
+    <script>
+        var s="veeraboina sairam yadav"
+        document.write(s.length)
+    </script>
+    <h4>20."hello guys welcome to prism pub" print prism pub in upper case</h4>
+    <script>
+        var s="hello guys welcome to prism pub"
+        var a=s.slice(22,31)
+        var e=a.toUpperCase()
+        document.write(e)
+    </script>
+
+    
+</body>
+</html>
