@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day8</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name:"sairam",
+            id:1234,
+            place:"hyd",
+            get location() {
+                return this.place;
+            }
+        }
+        console.log(person)
+        document.write(person.location,"<br>")
+        // const person = {
+        // firstName: "John",
+        // lastName: "Doe",
+        // language: "en",
+        // get lang() {
+        //     return this.language;
+        // }
+        // };
+        // document.write(person)
+
+
+        const object={
+            name:"santhosh",
+            id:1234,
+            place:" ",
+            set location(map){
+                this.place=map;
+            }
+        }
+        object.location="kphb";
+        document.write(object.place)
+        console.log(object)
+    </script>
+</body>
+</html>
