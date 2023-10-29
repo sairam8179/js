@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //1. set 
+        const details={
+  name:"",
+  age:"",
+  salary:"",
+  set demo (a)
+  {
+    this.name=a;
+    // this.age=b;
+    // this.salary=c;
+  }
+}
+details.demo="Sairam";
+document.write(details)
+
+// 2.abject length
+const obj ={
+  name:"sairam",
+  gender:"male",
+  age:"21",
+}
+  const a=Object.keys(obj)
+document.write(a.length)
+
+// 3.
+//         function welcome(){
+
+//         }
+//         welcome();
+//         function name(){
+//             return "sai";
+//         }
+//         function name1(){
+//             return "eswar"
+//         }
+//         function name2(){
+//             return "madhu"
+//         }
+//         document.write(name1)
+
+        // 4.for in
+
+        const b ={
+  name:"sairam",
+  gender:"male",
+  age:"21",
+}
+  for (x in b){
+    document.write(obj[x])
+  }
+  // 5.for of 
+  const arr="sai ram"
+
+  for (x of arr){
+    document.write(x)
+  }
+  document.write("<br>" ,"<br>")
+  // 6.split method
+  const str="sairam yadav veeraboina"
+  let result=str.split(",")
+  document.write(result)
+  document.write("<br>" ,"<br>")
+  // 7.join method
+  const arr1=["sairam","veeraboina"]
+  let fun=arr1.join(" yadav ")
+  document.write(fun)
+  document.write("<br>" ,"<br>")
+
+  // 8.call back function print squares
+  
+  function operators (arr2){
+    let result=[]
+    for(x of arr2){
+      result.push(x*x);
+    }
+    return result;
+  }
+  let arr2=[1,2,3,4,5];
+  document.write(operators(arr2));
+  document.write("<br>" ,"<br>")
+  // 9.Map Function
+  var d=[1,2,3,4,5,6,7,8,9,10]
+  var e=d.map(function(value){
+    return value*5;
+  })
+  document.write(e);
+  document.write("<br>" ,"<br>")
+  // 10.Map function
+  var s=[23,24,25,26]
+  var i=s.map(function(value){
+    return value+22;
+  })
+  document.write(i)
+  document.write("<br>" ,"<br>")
+    </script>
+</body>
+</html>

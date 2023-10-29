@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.filter method
+        const arr=[1,2,3,4,5,6,7,8,9,10]        
+        let saeArray= arr.filter((y)=>{
+            return y>3;
+        })
+        document.write (saeArray)
+        document.write("<br>")
+        // a.filter method
+        const num=[1,2,3,4,5,6,7,8,9,10]
+        let array=num.filter((x)=>{
+            return x*8;
+        })
+        document.write(array)
+        document.write("<br>")
+        // b.filter method
+        const one=[1,2,3,4,5,6,7,8,9,10]
+        let ramarray=one.filter((d)=>{
+            return d==2;
+        })
+        document.write(ramarray)
+        document.write("<br>")
+        // 2.For each method
+        const two=[1,2,3,4,5,6,7,8,9,10]
+        two.forEach((e)=>{
+            document.write(e+2);})
+            document.write("<br>")
+            // a.for each method
+            const three=[1,2,3,4,5,6,7,8,9,10]
+            three.forEach((u)=>{
+                document.write(u*2)
+            })
+            document.write("<br>")
+            // 3.Reduce Method
+            const four=[1,2,3,4,5,6,7,8,9,10]
+            let reduceArray=four.reduce((accu,ele,ind,four)=>{
+                return ele+accu;
+            })
+            document.write(reduceArray)
+            // a.reduce method ?
+            const five =[1,2,3,4,5,6,7,8,9,10]
+           let reducearray= five.reduce((accu,ele,ind,five)=>{
+                return accu * ele;
+            })
+            document.write(reducearray)
+            document.write("<br>")
+            // 4.Find Method
+            const ages=[3,4,5,34,8,10]
+            let sai=ages.find((age)=>{
+                return age>20;
+            });
+            document.write(sai)
+            document.write("<br>")
+            // 5.some method
+            const fun=[1,2,3,4,5,6,30]
+            let ram=fun.some((age)=>{
+                return age>5;
+            });
+            document.write(ram)
+            document.write("<br>")
+
+    </script>
+</body>
+</html>
