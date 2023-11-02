@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day12</title>
+</head>
+<body>
+    <script>
+        document.write("classes in objects&& setter getter---claas is template of an object or blue print of an object  -- class will have only one constructor and multiple methods<br>")
+        class one{
+            constructor(a,b){
+                this.name=a;
+                this.model=b
+            }
+            get kim(){
+                return this.name
+            }
+            setjim(x){
+                this.name=x;
+            }
+        }
+        let obj1=new one("pulser","BS6")
+        document.write(obj1,"<br>")
+        document.write(obj1.kim,"<br>")
+        obj1.setjim("duke")
+        document.write(obj1,"<br><br>")
+
+
+        //static method 
+        document.write("it is used to acces the data in the class without creating the objects<br>")
+        class two{
+            constructor(a,b){
+                this.name=a;
+                this.model=b
+            }
+            // get kim(){
+            //     return this.name
+            // }
+            // setjim(x){
+            //     this.name=x;
+            // }
+            static model(){  //here static is a function model is a function-name
+                document.write("i'm a static model")
+            }
+        }
+        two.model()
+        document.write("<br><br>")
+
+
+        //inheritance
+        document.write("the child class is having the abilities of an parent class<br>we can acccess multiple class elements by using this inheritance<br>")
+        class parent{
+            constructor(){
+                document.write("im a parent class")
+            }
+        }
+        class child extends parent{
+            constructor(){
+                document.write("im a child class....<br>")
+                super();
+            }
+        }
+        let obj=new child
+        document.write("<br><br>")
+
+
+        //method overRiding
+        document.write("METHOD OVERRIDING= JavaScript supports overriding, not overloading. When you define multiple functions that have the same name, the last one defined will override all the previously defined ones and every time when you invoke a function, the last defined one will get executed.<br><br>")
+        class demo{
+            constructor(){
+            document.write("demo constructor<br>");
+            }
+            demoMethod(){
+            document.write("demo method")
+            }
+         }
+
+        class sample extends demo{
+                constructor(){
+                super();
+                document.write("sample constructor<br>");
+                }
+                demoMethod(){
+                document.write("demo method sample"); 
+                }
+         }
+        let objj= new sample();
+        objj.demoMethod();
+        document.write("<br><br>")
+
+
+        //TASKS
+        //problem 1
+        document.write("PROBLEM 1. *Encapsulation with Getters and Setters:*Create a BankAccount class with encapsulated properties (accountNumber, balance). Implement methods getAccountNumber(), getBalance(), deposit(amount), and withdraw(amount) ensuring encapsulation.<BR>")
+        class bank{
+            constructor(){
+                this.accountnumber;
+                this.balance;
+            }
+            setaccbal(accountnumber,balance){
+                this.accountnumber=accountnumber;
+                this.balance=balance;
+                
+            }
+            getaccountnum(){
+                return this.accountnumber
+            }
+            getbal(){
+                return this.balance
+            }
+            deposit(amount){
+                return this.balance+amount;
+            }
+            withdraw(money){
+                return this.balance-money;
+            }
+
+        }
+        let SBI=new bank()
+        SBI.setaccbal("SBI37162212",18455)
+        document.write(SBI.getaccountnum(),"<br>")
+        document.write(SBI.getbal(),"<br>")
+        document.write(SBI.deposit(7250)," Credit<br>")
+        document.write(SBI.withdraw(4100)," Debit<br>")
+        
+        document.write("<br><br>")
+
+        
+        
+
+        //problem 2
+        debugger
+        document.write("PROBLEM 2 Private Properties: Implement a class TemperatureConverter with a private property celsius. Implement methods setCelsius(value), getCelsius(), convertToFahrenheit(), and convertToKelvin() ensuring private access to the celsius property.<br>")
+        class TemperatureConverter {
+        //celsius;
+
+        constructor() {
+            this.celsius;
+        }
+        // constructor(x) {
+        //     this.celsius=x;
+        // }
+
+        setCelsius(value) {
+            this.celsius = value;
+        }
+
+        getCelsius() {
+            return this.celsius;
+        }
+
+        ToFahrenheit() {
+            return (this.celsius * 9/5) + 32;
+        }
+
+        ToKelvin() {
+            return this.celsius + 273.15;
+        }
+        }
+        let converter=new TemperatureConverter()
+        converter.setCelsius(52);
+        document.write(converter.getCelsius(),"<br>"); 
+        document.write(converter.ToFahrenheit(),"<br>");
+        document.write(converter.ToKelvin(),"<br>"); 
+
+        document.write("<br><br>")
+
+
+
+
+        //problem 3
+        document.write("PROBLEM 3. *Static Method and Inheritance:*Create a MathOperations class with a static method square(number). Create a child class AdvancedMathOperations that extends MathOperations. Implement a static method cube(number) in AdvancedMathOperations.<br>")
+        class major{
+            static math(x){
+                return x*x;
+            }
+        }
+        class mini extends major{
+            static maths(x){
+                return x*x*x;
+            }
+        }
+        document.write(major.math(7),"<br>")
+        document.write(mini.math(7),"<br>")
+        document.write(mini.maths(7),"<br><br><br>")
+
+    
+
+        //problem 4
+        document.write("PROBLEM 4. Inheritance and Method Overriding: Create a class Shape with methods calculateArea() and calculatePerimeter(). Create child classes Circle and Square that inherit from Shape. Override the calculateArea() method in both child classes.<br>")
+        class Shape{
+        calculateArea(){
+            undefined
+        }
+
+        calculatePerimeter(){
+            undefined
+        }
+        }
+
+        class Circle extends Shape{
+        constructor(radius) {
+            super();
+            this.radius = radius;
+        }
+        calculateArea(){
+            return Math.PI*this.radius**2;
+        }
+        }
+
+        class Square extends Shape{
+        constructor(side){
+            super();
+            this.side = side;
+        }
+        calculateArea() {
+            return this.side**2
+            // return this.side*this.side;
+        }
+        }
+        let cir=new Circle(8)
+        document.write(cir.calculateArea(),"<br>")
+        let sq=new Square(16)
+        document.write(sq.calculateArea(),"<br>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <script>
+    // set timeout 
+    document.write("sae ")
+    document.write(" yadav ");
+    setTimeout(()=>{
+        document.write(" veeraboina");
+    },7000);
+    </script>
+    <script>
+    // b
+    document.write("santhosh");
+    document.write(" yadav ");
+    setTimeout(()=>{
+        document.write(" veeraboina ");
+    },8000)
+
+   </script>
+   <script>
+ // set interval
+    let count =0;
+    let result=setInterval(()=>{
+           console.log(count++);
+        if(count===4)
+    {
+        clearInterval(result)
+    }}
+,1000)
+ </script>
+ <script>
+    // clousers
+    function outer(){
+        var s="10k"
+        function inner(){
+            document.write(s)
+        }
+        return inner();
+    }
+    (outer());
+    // ex
+    function inst(){
+         var d="frontend developer"
+         function name(){
+            document.write(d)
+         }
+         return name();
+    }
+    (inst())
+ </script>
+ <script>
+    // currying
+    function sum (a){
+        return function(b)
+        {
+            return function(c)
+            {
+                return a+b+c
+            }
+        }
+    }
+    document.write(sum(2)(6)(8));    
+ </script>
+ <script>
+    function mul(a){
+        return function(b)
+        {
+            return function(c)
+            {
+               return  a*b*c
+            }
+        }
+    }
+    document.write(mul(2)(3)(4))
+ </script>
+</body>
+</html>
