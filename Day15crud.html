@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom operations</title>
+    <style>
+        /* #add{
+            color: orange;
+        }
+        #one{
+            background-color: red;
+        }
+        .two{
+            padding: 30px; 
+        }
+        .three{
+            font-family: cursive; 
+        }
+        .four{
+            border-radius: 50px;
+        } */
+        #tot{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #first{
+            background-color: aqua;
+        }
+        .barder{
+            border:2px solid black;
+        }
+        #only{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+    <h1 class="fullname">VEERABOINA SAIRAM</h1>
+    <img src="./images/mandi photo.jpg" id ="image1">
+    <hr>
+    <div id="for">
+    <div>
+    <h2>Educational Qualifications     </h2>
+    <h3>Graduation</h3>
+    <h4>DEGREE- BA[PEM] 88%</h4>
+    <h3>INTERMEDIATE</h3>
+    <h4>MPC- 891marks</h4>
+    <h3>SSC</h3>
+    <h4>2015-2016 --9.0%</h4>
+    </div>
+    <div id="total">
+    <div>
+    <h2>Skills</h2>
+    <h4>HTML</h4>
+    <h4>CSS</h4>
+    <h4>JAVASCRIPT</h4>
+    <h4>BOOTSTRAP</h4>
+    </div>
+    <div>
+    <h2>Languages Known</h2>
+    <h4>English</h4>
+    <h4>Hindi</h4>
+    <h4>Telugu</h4>
+    </div>
+
+    <div>
+    <h2>Hobbies</h2>
+    <h4>Watching News</h4>
+    <h4>PLaying Pubg</h4>
+    <h4>Help for Poor Peoples</h4>
+    </div>
+    </div>
+    </div>
+</div>
+ <script>
+     var a=document.getElementById("image1")
+    a.style.width="100px"
+    a.style.height="100px"
+    a.style.border="2px dotted "
+    a.style.borderradius="50%"
+
+    var b=document.getElementsByClassName("fullname")
+    b[0].style.textAlign="center"
+
+    let c=document.getElementById("total")
+    c.setAttribute("id","tot")
+
+    let z=document.getElementById("for")
+    z.setAttribute("id","first")
+    var v= document.getElementsByClassName("x")
+    v[0].setAttribute("class","barder");
+
+    let pp=document.getElementsByTagName("div")
+    pp[2].setAttribute("id","only")
+    
+
+//  a.classList.add("three")
+    //  a.classList.add("four")
+//     a.style.height="500px"
+//     a.style.width="500px"
+//     console.log(a.getAttribute("id"))
+//    console.log(a.setAttribute("src","./images/mandi photo.jpg")) 
+</script>
+</body>
+
+</html>
