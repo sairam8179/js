@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 150px; */
+            background-color: rgb(127, 218, 218);
+            /* margin: 5px; */
+        }
+        #container{
+            border: 1px solid rgb(194, 187, 187);
+            border-radius: 5px;
+            background-color:whitesmoke;
+            margin: 5px;
+            padding: 20px;
+        }
+        .first{
+            margin: 40px;
+        }
+        #button{
+            margin: 0px 0px 0px 120px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <form>
+        <div class="first">
+        <label>User Name</label>
+        <input type="text">
+        </div>
+        <div class="first">
+            <label for="">password</label>
+            <input type="password">
+        </div>
+        <input type="submit" value="submit" id="button" onclick="document.body.style.backgroundColor='green'">
+        </form>
+        </div>
+    <script>
+
+        var s=[];
+        s= JSON.parse(localStorage.getItem("loginform"))
+        var form=document.forms;
+        form[0].addEventListener("submit",(login)=>{
+            login.preventDefault;
+            
+            var username=login.target[0].value
+            var password=login.target[1].value
+
+            var user=s[0]["name"] 
+            var pass=s[0]["password1"]
+            if(username===user&&password===pass){
+                window.open("Day18(seemore).html")
+            }
+            else{
+                alert("give valid credentails")
+            }
+
+        })
+    </script>
+</body>
+</html>

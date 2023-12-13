@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeemorepageDocument</title>
+    <style>
+        
+    </style>
+</head>
+<body> 
+    <script>
+        var d=JSON.parse(localStorage.getItem("sairam"))
+        var e=document.createElement("h1")
+        e.innerHTML=d["id"]
+        document.body.appendChild(e)
+
+        var e=document.createElement("h1")
+        e.innerHTML=d["title"]
+        document.body.appendChild(e)
+
+        var e=document.createElement("h1")
+        e.innerHTML=d["price"]
+        document.body.appendChild(e)
+
+        var e=document.createElement("h1")
+        e.innerHTML=d["description"]
+        document.body.appendChild(e)
+
+        var e=document.createElement("h1")
+        e.innerHTML=d["category"]
+        e.style.color="red"
+        document.body.appendChild(e)
+
+        var e=document.createElement("img")
+        e.setAttribute("src",d["image"])
+        e.style.height="150px"
+        e.style.width="150px"
+        document.body.appendChild(e)
+
+        var e=document.createElement("h1")
+        e.innerHTML=d["rating"]["rate"]
+        e.style.backgroundColor="pink"
+        document.body.appendChild(e)
+
+        var e=document.createElement("h1")
+        e.innerHTML=d["rating"]["count"]
+        document.body.appendChild(e)
+        
+    </script>
+</body>
+</html>
